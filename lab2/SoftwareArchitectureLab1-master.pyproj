@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6364664a-ebcb-44f5-af6f-a417afc75738}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>Book.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+    <InterpreterVersion />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include=".vscode\desktop.ini" />
+    <Content Include="configuration\desktop.ini" />
+    <Content Include="desktop.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Book.py" />
+    <Compile Include="btest.py" />
+    <Compile Include="configuration\configParser.py" />
+    <Compile Include="Controller.py" />
+    <Compile Include="JsonSerialize.py" />
+    <Compile Include="main.py" />
+    <Compile Include="Model.py" />
+    <Compile Include="mtest.py" />
+    <Compile Include="Serialize.py" />
+    <Compile Include="stest.py" />
+    <Compile Include="test_helpers.py" />
+    <Compile Include="User.py" />
+    <Compile Include="utest.py" />
+    <Compile Include="View.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vscode" />
+    <Folder Include="configuration" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>
