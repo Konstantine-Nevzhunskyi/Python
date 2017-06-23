@@ -1,1 +1,1 @@
-[[{"user_name": "Ivan", "book_list": [], "age": 20}, {"user_name": "Vlad", "book_list": [], "age": 19}, {"user_name": "Polina", "book_list": [], "age": 18}], []]
+[[{"age": 18, "user_name": "Harry", "book_list": []}, {"age": 18, "user_name": "Germiona", "book_list": [{"rates": [65.0], "book_name": "History of Hogwarts", "book_year": 1914, "book_author": "Bagshot"}]}, {"age": 17, "user_name": "Ronald", "book_list": []}], [{"rates": [65.0], "book_name": "History of Hogwarts", "book_year": 1914, "book_author": "Bagshot"}]]
