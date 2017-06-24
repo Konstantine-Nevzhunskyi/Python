@@ -1,0 +1,2 @@
+def date():
+    return "DATE"
